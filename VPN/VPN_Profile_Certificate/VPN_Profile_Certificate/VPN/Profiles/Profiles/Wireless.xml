@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/">;
+	<ClientInitialization>
+		<LocalLanAccess>true</LocalLanAccess>
+		<BlockUntrustedServers>false</BlockUntrustedServers>
+		<CertificateMatch>
+			<DistinguishedName>
+				<DistinguishedNameDefinition Operator="Equal" Wildcard="Disabled" MatchCase="Enabled">
+					<Name>CN</Name>
+					<Pattern>192.168.0.1</Pattern>
+				</DistinguishedNameDefinition>
+			</DistinguishedName>
+		</CertificateMatch>
+	</ClientInitialization>
+	<ServerList>
+		<HostEntry>
+			<HostName>Fuji Rochester Wireless</HostName>
+			<HostAddress>192.168.0.1</HostAddress>
+			<Group>FNAC</Group>
+		</HostEntry>
+	</ServerList>
+</AnyConnectProfile>
